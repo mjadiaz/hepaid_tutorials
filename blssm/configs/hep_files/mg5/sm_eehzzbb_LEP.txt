@@ -1,0 +1,7 @@
+import model GSM -modelname
+define p = g d1 d2  u1 u2  d1bar d2bar u1bar u2bar
+generate e1 e1bar > h z, h > d3 d3bar
+output WORK_DIR
+launch WORK_DIR
+PARAM_CARD_DIR
+set lep 200

@@ -1,0 +1,8 @@
+set automatic_html_opening False
+import model BLSSM -modelname
+define p = g d1 d2  u1 u2  d1bar d2bar u1bar u2bar
+generate g g > h1, h1 > a a
+output WORK_DIR
+launch WORK_DIR
+PARAM_CARD_DIR
+set LHC 13

@@ -1,0 +1,7 @@
+import model BLSSM -modelname
+define p = g d1 d2  u1 u2  d1bar d2bar u1bar u2bar
+generate g g > h1
+output WORK_DIR
+launch WORK_DIR
+PARAM_CARD_DIR
+set LHC 13

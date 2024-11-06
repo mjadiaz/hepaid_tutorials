@@ -1,0 +1,48 @@
+input_space:
+  m0:
+    lower: 100.
+    upper: 1000.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "1", "value"]
+  m12:
+    lower: 1000.
+    upper: 4500.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "2", "value"]
+  TanBeta:
+    lower: 1.
+    upper: 60.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "3", "value"]
+  Azero:
+    lower: 100.
+    upper: 4000.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "5", "value"]
+  MuInput:
+    lower: 1000.
+    upper: 8000.
+    distribution: "uniform"
+    key_chain: ["LHS", "EXTPAR", "entries", "11", "value"]
+  MuPInput:
+    lower: 1000.
+    upper: 8000.
+    distribution: "uniform"
+    key_chain: ["LHS", "EXTPAR", "entries", "12", "value"]
+  BMuInput:
+    lower: 1e3
+    upper: 1e8
+    distribution: "uniform"
+    key_chain: ["LHS", "EXTPAR", "entries", "13", "value"]
+  BMuPInput:
+    lower: 1e3
+    upper: 1e8
+    distribution: "uniform"
+    key_chain: ["LHS", "EXTPAR", "entries", "14", "value"]
+output_parameters:
+  Mh(1): ["SLHA", "MASS", "entries", "25", "value"]
+  Mh(2): ["SLHA", "MASS", "entries", "35", "value"]
+objectives:
+  double_constraint:
+    Mh(1): [["gt", 90.4], ["lt", 100.4]]
+    Mh(2): [["gt", 120.0], ["lt", 130.4]]

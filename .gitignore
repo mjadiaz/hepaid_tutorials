@@ -1,0 +1,74 @@
+LesHouches.in.cTSM
+__pycache__
+BLSSM_scan.py
+cTSM_scan.ipynb
+BR*
+SPheno.out
+Messages.out
+./ipynb_checkpoints
+Untitled.ipynb
+py.py
+ME5_debug
+/hepaid/test.py
+/hepaid/testdir
+/hepaid.egg-info
+/dist
+/examples/.ipynb_checkpoints
+/hepaid/.test.py.swp
+/hepaid/_version.py
+book/
+.vscode/
+
+**/.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+**/*.egg-info
+**/*.egg
+
+
+
+
+blssm/datasets
+examples
+blssm/hepstack/higgsbounds-master
+blssm/hepstack/higgssignals-master
+blssm/hepstack/MG5_aMC_v3_5_4
+blssm/hepstack/SPheno-4.0.4
+test_function/datasets
+blssm/datasets
+blssm/slurm*
+
+# Ignore everything in the dataset folder
+blssm/hepstack/*
+# But do not ignore files that start with BLSSM
+!blssm/hepstack/BLSSM*
+# Ensure that the directory structure is not ignored
+!blssm/hepstack/
+
+output

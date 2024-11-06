@@ -1,0 +1,6 @@
+import model GSM -modelname
+generate g g > h, h > a a
+output WORK_DIR
+launch WORK_DIR
+PARAM_CARD_DIR
+set LHC 13

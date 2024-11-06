@@ -1,0 +1,6 @@
+import model GSM 
+generate e+ e- > h z
+output WORK_DIR
+launch WORK_DIR
+PARAM_CARD_DIR
+set lep 600
