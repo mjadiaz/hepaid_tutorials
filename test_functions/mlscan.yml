@@ -1,0 +1,19 @@
+num_samples: 30
+checkpoint:
+  n_step_save: 10
+  name: chckpnt
+run_name: mlscan/run_1
+total_iterations: 100
+parallel: False
+n_workers: 4
+initial_dataset:
+  generate: True,
+  n_points: 100
+model_hyperparameters:
+  layer_sizes: [5, 60, 60, 60, 2]
+  dropout_prob: 0.0
+  learning_rate: 0.01
+  num_epochs: 500
+  step_size: 5
+  gamma: 0.999
+  threshold: 1.0e-08
