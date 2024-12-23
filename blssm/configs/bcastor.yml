@@ -1,26 +1,23 @@
-run_name: "blssm/run_1"
+run_name: "blssm/run_two_masses_open_ranges_no_musBs_1"
 parallel: True
+n_workers: 30
 initial_dataset:
   generate: True,
-  n_workers: 30
-  n_points: 400
+  n_points: 600
 checkpoint:
   name: "checkpoint"
   n_step_save: 5
-total_iterations: 250 # Optimisation budget steps
+total_iterations: 250
 resolution:
   value: 1e-6
   constant_resolution: False
   r_decay_steps: 100
   initial: 1e-2
-  final: 1e-6
+  final: 1e-8
 batch_sampling:
   tpe_trials: 2500
   rank_samples: 30
   n_evaluation_workers: 30
   alpha: 2
 eci:
-  num_samples: 500 # Fixed samples
-reporter:
-  wandb_name: "castor-blssm"
-  n_step_plotting: 5
+  num_samples: 500

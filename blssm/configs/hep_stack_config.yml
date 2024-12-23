@@ -1,0 +1,49 @@
+model:
+  name: 'BLSSM'
+  input:
+    m0:
+        block_index: 1
+        block_name: 'MINPAR'
+    m12:
+        block_index: 2
+        block_name: 'MINPAR'
+    TanBeta:
+        block_index: 3
+        block_name: 'MINPAR'
+    Azero:
+        block_index: 5
+        block_name: 'MINPAR'
+    MuInput:
+        block_index: 11
+        block_name: 'EXTPAR'
+    MuPInput:
+        block_index: 12
+        block_name: 'EXTPAR'
+    BMuInput:
+        block_index: 13
+        block_name: 'EXTPAR'
+    BMuPInput:
+        block_index: 14
+        block_name: 'EXTPAR'
+spheno:
+    model: 'BLSSM'
+    reference_slha: '/scratch/mjad1g20/dev/bcastor_paper/blssm-bcastor/experiments_paper/blssm/configs/hep_files/diphoton_paper_v2'
+    directory: '/home/mjad1g20/HEP/SPHENO/SPheno-4.0.5/'
+higgsbounds:
+    neutral_higgs: 6
+    charged_higgs: 1
+    directory: '/scratch/mjad1g20/dev/bcastor_paper/blssm-bcastor/experiments_paper/blssm/hepstack/higgsbounds-master/build'
+higgssignals:
+    neutral_higgs: 6
+    charged_higgs: 1
+    directory: '/scratch/mjad1g20/dev/bcastor_paper/blssm-bcastor/experiments_paper/blssm/hepstack/higgssignals-master/build'
+madgraph:
+    directory: '/scratch/mjad1g20/HEP/MG5_aMC_v3_5_1'
+    #directory: '/scratch/mjad1g20/dev/bcastor_paper/blssm-bcastor/experiments_paper/blssm/hepstack/MG5_aMC_v3_5_5'
+    scripts:
+        gghaa: "configs/hep_files/mg5/blssm_pphaa_LHC13.txt"
+hep_stack:
+    name: 'SPhenoStack'
+    scan_dir: '/mainfs/scratch/mjad1g20/tutorials/hepaid_tutorials/blssm/datasets/scan'
+    final_dataset: '/mainfs/scratch/mjad1g20/tutorials/hepaid_tutorials/blssm/datasets'
+    delete_on_exit: True

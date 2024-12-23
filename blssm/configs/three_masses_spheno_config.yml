@@ -1,0 +1,43 @@
+input_space:
+  m0:
+    lower: 100.
+    upper: 1000.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "1", "value"]
+  m12:
+    lower: 1000.
+    upper: 4500.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "2", "value"]
+  TanBeta:
+    lower: 1.
+    upper: 60.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "3", "value"]
+  TanBetaP:
+    lower: 0.8
+    upper: 2.0
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "7", "value"]
+  gBL:
+    lower: 0.1
+    upper: 0.7
+    distribution: "uniform"
+    key_chain: ["LHS", "EXTPAR", "entries", "1", "value"]
+  Azero:
+    lower: 100.
+    upper: 4000.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "5", "value"]
+  MZp:
+    lower: 2500.
+    upper: 4000.
+    distribution: "uniform"
+    key_chain: ["LHS", "MINPAR", "entries", "8", "value"]
+output_parameters:
+  Mh(1): ["SLHA", "MASS", "entries", "25", "value"]
+  Mh(2): ["SLHA", "MASS", "entries", "35", "value"]
+objectives:
+  double_constraint:
+    Mh(1): [["gt", 90.4], ["lt", 100.4]]
+    Mh(2): [["gt", 120.0], ["lt", 130.4]]
